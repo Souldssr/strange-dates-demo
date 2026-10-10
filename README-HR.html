@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>我的相亲对象们有点怪｜作品说明</title>
+  <!-- 单文件离线阅读卡：全部样式内联，系统字体，无脚本及外部资源依赖。 -->
+  <style>
+    :root { --ink:#e8e5d9; --muted:#a7bdb6; --gold:#d2b68d; --edge:#527069; --deep:#0b1b20; --panel:#10282b; }
+    * { box-sizing:border-box; }
+    html { background:var(--deep); }
+    body { margin:0; color:var(--ink); font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif; line-height:1.8; background:radial-gradient(ellipse at 90% 3%,#24433f 0,transparent 36%),linear-gradient(145deg,#11292c,#09171c 72%); }
+    a { color:var(--gold); text-underline-offset:5px; }
+    a:focus-visible,summary:focus-visible { outline:2px solid var(--gold); outline-offset:6px; }
+    .page { max-width:1160px; margin:auto; padding:42px 48px 30px; }
+    .masthead { display:flex; justify-content:space-between; gap:20px; color:var(--gold); font-size:12px; letter-spacing:.2em; text-transform:uppercase; padding-bottom:26px; border-bottom:1px solid #57726866; }
+    .hero { position:relative; display:grid; grid-template-columns:minmax(0,1fr) 265px; gap:54px; align-items:center; padding:64px 0 48px; }
+    .eyebrow { color:var(--muted); font-size:13px; letter-spacing:.2em; margin:0 0 17px; }
+    h1 { font-family:"STSong","Songti SC","SimSun",serif; font-weight:500; font-size:clamp(34px,4.4vw,55px); line-height:1.37; letter-spacing:.025em; margin:0; }
+    h1 span { display:block; color:var(--gold); font-size:1.31em; }
+    .tagline { max-width:650px; color:#c6d1c8; font-size:17px; margin:26px 0 0; }
+    .invitation { position:relative; border:1px solid #9f916b80; padding:28px 25px; background:#0a1b1be0; text-align:center; box-shadow:9px 10px 0 #6e78591c; transform:rotate(2deg); }
+    .invitation::before { content:""; position:absolute; inset:7px; border:1px solid #6c78583d; pointer-events:none; }
+    .invitation .small { font-size:12px; letter-spacing:.25em; color:var(--muted); }
+    .invitation .time { font-family:Georgia,serif; font-size:55px; font-weight:400; color:var(--gold); letter-spacing:.035em; margin:15px 0 4px; }
+    .invitation .rule { width:28px; height:1px; background:var(--gold); margin:19px auto; }
+    .invitation p { font-size:13px; margin:0; color:#c1c6b5; }
+    .facts { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid #68807866; border-bottom:1px solid #68807866; margin-bottom:46px; }
+    .fact { padding:19px 20px; border-right:1px solid #68807844; }
+    .fact:first-child { padding-left:0; }.fact:last-child { border:0; }
+    .fact strong { display:block; color:var(--gold); font-weight:500; font-size:22px; }
+    .fact span { display:block; font-size:12px; color:var(--muted); letter-spacing:.06em; }
+    .section-label { color:var(--gold); font-size:11px; letter-spacing:.18em; text-transform:uppercase; margin-bottom:10px; }
+    h2 { font-size:25px; font-weight:500; line-height:1.4; margin:0 0 19px; }
+    h3 { font-size:18px; font-weight:500; margin:0 0 9px; color:#e4d3b5; }
+    p { margin:0 0 16px; }
+    .lede { font-size:16px; max-width:960px; color:#c3d0c7; }
+    .concept { padding-bottom:38px; }
+    .feature-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; padding-bottom:46px; }
+    .feature { border-top:1px solid #ab94684d; padding:19px 0 0; }
+    .feature .num { display:block; color:#829a8a; font-family:Georgia,serif; font-size:15px; letter-spacing:.2em; margin-bottom:11px; }
+    .feature p { color:var(--muted); font-size:14px; margin:0; }
+    .cast { padding:30px 0 44px; border-top:1px solid #68807855; }
+    .cast-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .person { border:1px solid #54706566; background:linear-gradient(145deg,#1d3a344d,#102126); padding:24px; }
+    .person.y { background:linear-gradient(145deg,#51455b40,#102126); }
+    .person.n { background:linear-gradient(145deg,#5b343a40,#102126); }
+    .person .name { display:flex; justify-content:space-between; align-items:baseline; }
+    .person h3 { font-size:28px; color:#a2c8bd; }.person.y h3 { color:#c8bed9; }.person.n h3 { color:#d6b4a5; }
+    .person .index { font-family:Georgia,serif; font-size:14px; color:#83938c; }
+    .person .job { color:#9cafaa; font-size:12px; margin:0 0 19px; }
+    .person blockquote { font-family:"STSong","Songti SC","SimSun",serif; font-size:18px; line-height:1.7; margin:0 0 19px; min-height:62px; color:#ddd9cc; }
+    .person .motive { margin:0; color:#a9b6ab; font-size:13px; }
+    .archetype { margin-top:20px; padding-top:13px; border-top:1px solid #70817944; font-size:11px; letter-spacing:.015em; color:#90a7a0; }
+    .watch { display:grid; grid-template-columns:1.1fr 1fr; gap:45px; padding:34px; background:#112a2b; border:1px solid #61776477; margin-bottom:42px; }
+    .watch p { font-size:14px; color:#b7c9bf; }
+    .launch { display:inline-block; margin:3px 0 15px; padding:12px 18px; background:var(--gold); color:#102326; font-size:14px; letter-spacing:.06em; }
+    .route { font-size:15px; color:#e0d6be; line-height:2; margin:6px 0 13px; }
+    .keys { display:grid; grid-template-columns:115px 1fr; gap:8px 16px; margin:0; font-size:13px; }
+    .keys dt { color:#d8c39d; }.keys dd { margin:0; color:#a9beb4; }
+    .disclosure { border-top:1px solid #68807855; padding-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+    .disclosure h2 { font-size:19px; }.disclosure p { color:#99b1a6; font-size:12px; line-height:1.9; }
+    details { font-size:12px; color:#a7bdb3; border:1px solid #596f624d; padding:12px 15px; margin-top:17px; }
+    summary { cursor:pointer; color:#c5ba9a; }
+    details p { margin:12px 0 0; }
+    footer { display:flex; justify-content:space-between; gap:20px; padding-top:28px; color:#748d82; font-size:11px; letter-spacing:.08em; }
+    @media (max-width:800px) { .page { padding:25px; }.hero { grid-template-columns:1fr; gap:30px; padding:40px 0; }.invitation { display:none; }.facts { grid-template-columns:repeat(2,1fr); }.fact { padding:14px 12px!important; }.fact:nth-child(2) { border-right:0; }.feature-grid,.cast-grid { grid-template-columns:1fr; }.feature-grid { gap:22px; }.watch,.disclosure { grid-template-columns:1fr; gap:24px; }.watch { padding:24px; }.person blockquote { min-height:0; }.masthead { font-size:10px; letter-spacing:.12em; }.masthead span:last-child { text-align:right; }footer { flex-direction:column; gap:5px; } }
+    @media print { html,body { background:white; color:#162d2c; }.page { max-width:none; padding:0; }.invitation { box-shadow:none; }* { print-color-adjust:exact; }.hero,.cast,.watch,.disclosure { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+<main class="page">
+  <header class="masthead"><span>余温 / After Hours</span><span>作品体验说明 · 雨夜试约</span></header>
+  <!-- 首屏先交代作品与观看成本；邀请函用文字和 CSS 呈现，离线也能完整显示。 -->
+  <section class="hero" aria-labelledby="title">
+    <div>
+      <p class="eyebrow">都市恋爱 / 视线之外的悬疑</p>
+      <h1 id="title">我的相亲对象们<span>有点怪</span></h1>
+      <p class="tagline">她们都很喜欢你。<br>只是，喜欢的方式不太一样。</p>
+    </div>
+    <aside class="invitation" aria-label="故事邀请函">
+      <div class="small">今晚 · 余温咖啡馆</div>
+      <div class="time">21:17</div>
+      <div class="rule"></div>
+      <p>请选一个<br>能陪你等雨停的人。</p>
+    </aside>
+  </section>
+  <div class="facts" aria-label="作品信息">
+    <div class="fact"><strong>5–8 分钟</strong><span>单周目体验</span></div>
+    <div class="fact"><strong>3 位对象</strong><span>现代都市角色</span></div>
+    <div class="fact"><strong>4 个结局</strong><span>可直接重选回收</span></div>
+    <div class="fact"><strong>Ren'Py 8.2</strong><span>Windows 视觉小说</span></div>
+  </div>
+
+  <section class="concept" aria-labelledby="concept">
+    <div class="section-label">01 / Concept</div>
+    <h2 id="concept">一张桌子，三封邀请。</h2>
+    <p class="lede">二十七岁的编辑林予，在雨夜收到三份同一时间的相亲邀请。三位姑娘看起来都很正常，聊工作、早餐和喜欢的火锅。但当他低头捡起餐巾、转身向店员道谢时，世界会悄悄偏离一点。</p>
+    <p class="lede">这是一段带着温度的克系恋爱故事：把不可知的力量藏进约会里的小细节，用空镜、停顿与声音让读者意识到，自己比主角多看见了一点。</p>
+  </section>
+  <section class="feature-grid" aria-label="展示亮点">
+    <article class="feature"><span class="num">01</span><h3>人物关系先于谜底</h3><p>三次短约会围绕耐心、未知与真实展开。两次对话选择改变回应，最后的同行选择完成情绪收束。</p></article>
+    <article class="feature"><span class="num">02</span><h3>恐怖发生在视线之外</h3><p>角色保持正常的人类形象。异常通过撤去立绘、环境色调、空镜文字与声音呈现，没有实体怪物、血腥或突发惊吓。</p></article>
+    <article class="feature"><span class="num">03</span><h3>一段完整的可玩体验</h3><p>定制标题页、人物档案、存读档、历史回看与结局回收册。支持自动阅读、声音调节及减少动态雨丝。</p></article>
+  </section>
+
+  <!-- 人物信息来自游戏档案；只交代性格与原型意象，不揭露各自结局。 -->
+  <section class="cast" aria-labelledby="cast">
+    <div class="section-label">02 / The Dates</div>
+    <h2 id="cast">今晚，你会想多了解谁？</h2>
+    <div class="cast-grid">
+      <article class="person">
+        <div class="name"><h3>珂澜</h3><span class="index">01</span></div>
+        <p class="job">26 岁 · 海洋声学研究员</p>
+        <blockquote>“午餐睡过了，<br>就下午茶。”</blockquote>
+        <p class="motive">温柔、慢半拍，很擅长等待。<br>这一次，她想认真地醒着赴约。</p>
+        <div class="archetype">克苏鲁 / 深海 · 梦境 · 沉眠</div>
+      </article>
+      <article class="person y">
+        <div class="name"><h3>犹夏</h3><span class="index">02</span></div>
+        <p class="job">25 岁 · 建筑设计师</p>
+        <blockquote>“不是。<br>是可能性太多了。”</blockquote>
+        <p class="motive">理性、周到，连聊天都有方案。<br>她最期待的答案，是没有准备过的。</p>
+        <div class="archetype">犹格·索托斯 / 门扉 · 时空 · 可能性</div>
+      </article>
+      <article class="person n">
+        <div class="name"><h3>奈亚</h3><span class="index">03</span></div>
+        <p class="job">27 岁 · 品牌创意顾问</p>
+        <blockquote>“我不想今晚<br>结束得这么快。”</blockquote>
+        <p class="motive">聪明、戏谑，总能让人满意。<br>可今晚，她有一句自己的真心话。</p>
+        <div class="archetype">奈亚拉托提普 / 千面 · 信使 · 戏谑</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="watch" aria-labelledby="watch">
+    <div>
+      <div class="section-label">03 / First Look</div>
+      <h2 id="watch">给这场相亲留几分钟。</h2>
+      <div class="launch">解压发行包，双击 StrangeDates.exe</div>
+      <p>Windows 版自带运行时，无需安装 Ren'Py。此说明页可离线阅读；游戏与本页分别打开。</p>
+      <div class="route">赴约 → 按直觉回应 → 选择同行者<br>→ 看完结局 → 再选一次 / 回收册</div>
+      <p>第一次不必查攻略。前置选择不会锁死路线，独自离开也是完整的选择。</p>
+    </div>
+    <div>
+      <div class="section-label">Controls</div>
+      <h2>按自己的节奏阅读。</h2>
+      <dl class="keys">
+        <dt>左键 / 空格</dt><dd>推进对话</dd>
+        <dt>滚轮向上</dt><dd>回看前一句</dd>
+        <dt>Esc / 右键</dt><dd>打开设置</dd>
+        <dt>H</dt><dd>隐藏界面，查看画面</dd>
+        <dt>Ctrl</dt><dd>跳过已读对话</dd>
+        <dt>底部快捷按钮</dt><dd>自动阅读、回看、存档与读档</dd>
+      </dl>
+      <p style="margin-top:20px">建议以舒适的小音量开启环境声。三位相亲对象与主角均为成年人；Demo 无角色配音。</p>
+    </div>
+  </section>
+
+  <section class="disclosure" aria-label="制作披露与验证">
+    <div>
+      <div class="section-label">Production Notes</div>
+      <h2>关于制作方式</h2>
+      <p>本项目根据用户提出的主题、现代服装要求及提供的风格参考，使用 Codex 协作完成剧本、界面、程序与整合。人物和背景使用 OpenAI 图像生成工具制作；声音由程序合成；中文字体为 Source Han Sans Lite，许可证随发行包保留。</p>
+      <p>制作重点是将角色设定、分支叙事、界面与音画演出整合为完整的短篇体验。源码附有中文注释，保留美术提示和音效生成程序，便于继续开发与复盘。</p>
+    </div>
+    <div>
+      <div class="section-label">Scope &amp; Verification</div>
+      <h2>关于这份 Demo</h2>
+      <p>目标是展示一个可运行的短篇叙事切片：三段约会、轻量分支和四种收束。三位角色统称“克系原型改写”；人类身份与恋爱性格属于本作创作，不作神话分类考据。</p>
+      <!-- 验证依据为真实 Ren'Py testcase、发行包运行日志与实际渲染截图。 -->
+      <details>
+        <summary>完成验证 · 2026.10.10</summary>
+        <p>Ren'Py Lint、界面操作、真实存读档恢复、共通剧情与四结局测试均已通过。解压 Windows 发行包后，使用其自带运行时再次通过两组测试；已复核 17 张实际引擎截图。源码、字体许可与本说明随包提供。</p>
+      </details>
+    </div>
+  </section>
+  <footer><span>我的相亲对象们有点怪 · 雨夜试约</span><span>一场恰好停在 21:17 的相亲</span></footer>
+</main>
+</body>
+</html>

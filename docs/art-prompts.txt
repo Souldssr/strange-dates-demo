@@ -1,0 +1,40 @@
+我的相亲对象们有点怪 — Art generation record
+
+Generation method: built-in image_gen tool, not CLI. Four separate calls; generated in parallel. Date: 2026-10-10.
+Reference: User-provided style reference (local file path omitted).
+The attached reference was visually inspected and interpreted as art-direction guidance (refined semi-painted anime, long hair, deep gemstone colors, delicate gold detail). Original modern characters were generated; no reference figures were copied.
+Transparency: transparent_background=true for the three character assets, false for cafe.
+No raster image editing, resizing, recoloring or alpha stripping was applied. Original generated PNG files were copied byte-for-byte to the project.
+
+ASSET: kelan.png
+Project path: game/images/kelan.png
+Original source: built-in image_gen output; project copy identified above.
+Dimensions: 1024 x 1536, RGBA
+Alpha validation: real alpha channel, minimum 0, maximum 254; transparent background sampled at alpha 0
+Prompt (verbatim):
+Use case: stylized-concept. Asset type: final production 2D character sprite for a Japanese-style urban romance visual novel. Style: exquisite semi-painted anime illustration, slender adult proportions, beautiful detailed long hair strands, refined shading, subtle luxurious gold jewelry, deep gemstone colors, sophisticated dark romantic art direction. Contemporary urban fashion ONLY. One normal attractive adult human woman age 26, warm approachable expression, standing upright facing the viewer in a gentle three-quarter pose. Full head, hair, both hands, outfit, cropped just below knees, centered on vertical canvas, 8% safe transparent margins around silhouette. Genuine transparent RGBA background with smooth clean anti-aliased alpha edges, no opaque backdrop, no ground shadow, no environmental objects. No words or letters. No collage or character sheet. Absolutely no monster anatomy, tendrils, extra limbs, horns, armor, crowns, fantasy robes, weapons, staffs, occult symbols, glowing eyes, or horror visuals. Reference art direction described above should be reinterpreted into a normal modern woman. Subject: Kelan, long flowing dark ink-teal hair, soft blue-green eyes, gentle slightly sleepy smile. Cream fine-knit top under a deep teal modern long trench coat worn open, charcoal short skirt and opaque black tights. Tiny elegant gold ocean-wave earrings. She holds a plain white coffee cup naturally with both hands in front of waist. Fabric is richly painted and realistic but anime stylized; soft warm cafe-side illumination. Dark teal, ivory and aged gold palette.
+
+ASSET: youxia.png
+Project path: game/images/youxia.png
+Original source: built-in image_gen output; project copy identified above.
+Dimensions: 1024 x 1536, RGBA
+Alpha validation: real alpha channel, minimum 0, maximum 254; transparent background sampled at alpha 0
+Prompt (verbatim):
+Use case: stylized-concept. Asset type: final production 2D character sprite for a Japanese-style urban romance visual novel. Style: exquisite semi-painted anime illustration, slender adult proportions, beautiful detailed long hair strands, refined shading, subtle luxurious gold jewelry, deep gemstone colors, sophisticated dark romantic art direction. Contemporary urban fashion ONLY. One normal attractive adult human woman age 26, warm approachable expression, standing upright facing the viewer in a gentle three-quarter pose. Full head, hair, both hands, outfit, cropped just below knees, centered on vertical canvas, 8% safe transparent margins around silhouette. Genuine transparent RGBA background with smooth clean anti-aliased alpha edges, no opaque backdrop, no ground shadow, no environmental objects. No words or letters. No collage or character sheet. Absolutely no monster anatomy, tendrils, extra limbs, horns, armor, crowns, fantasy robes, weapons, staffs, occult symbols, glowing eyes, or horror visuals. Reference art direction described above should be reinterpreted into a normal modern woman. Subject: Youxia, very long silver-lavender flowing hair, pale lavender eyes, intelligent composed tender expression. A fitted black high-neck fine-knit sweater, light muted lavender-gray tailored blazer, taupe-gray long skirt. Delicate tiny gold circular-ring necklace. One hand holds a closed small ordinary hardcover book without text against her waist, other hand relaxed. Richly painted contemporary fabrics and softly luminous hair, soft warm cafe-side illumination. Silver lavender, charcoal, taupe and aged gold palette.
+
+ASSET: naiya.png
+Project path: game/images/naiya.png
+Original source: built-in image_gen output; project copy identified above.
+Dimensions: 1024 x 1536, RGBA
+Alpha validation: real alpha channel, minimum 0, maximum 254; transparent background sampled at alpha 0
+Prompt (verbatim):
+Use case: stylized-concept. Asset type: final production 2D character sprite for a Japanese-style urban romance visual novel. Style: exquisite semi-painted anime illustration, slender adult proportions, beautiful detailed long hair strands, refined shading, subtle luxurious gold jewelry, deep gemstone colors, sophisticated dark romantic art direction. Contemporary urban fashion ONLY. One normal attractive adult human woman age 26, warm approachable expression, standing upright facing the viewer in a gentle three-quarter pose. Full head, hair, both hands, outfit, cropped just below knees, centered on vertical canvas, 8% safe transparent margins around silhouette. Genuine transparent RGBA background with smooth clean anti-aliased alpha edges, no opaque backdrop, no ground shadow, no environmental objects. No words or letters. No collage or character sheet. Absolutely no monster anatomy, tendrils, extra limbs, horns, armor, crowns, fantasy robes, weapons, staffs, occult symbols, glowing eyes, or horror visuals. Reference art direction described above should be reinterpreted into a normal modern woman. Subject: Naiya, long dark black subtly wavy hair, amber-gold normal eyes, confident friendly subtle smile. Modern black satin blouse with modest open collar beneath a wine-burgundy tailored blazer, high-waisted charcoal tailored trousers. Delicate minimal gold earrings and fine gold necklace. She casually holds an ordinary smartphone without logos at her hip, screen facing inward; other hand relaxed. Luxurious realistic fabric folds in refined anime painting, soft warm cafe-side illumination. Black, burgundy and subtle old gold palette.
+
+ASSET: cafe.png
+Project path: game/images/cafe.png
+Original source: built-in image_gen output; project copy identified above.
+Dimensions: 1672 x 941, RGB
+Alpha validation: Not applicable; opaque background
+Prompt (verbatim):
+Use case: illustration-story. Asset type: final production visual novel background, wide 16:9 landscape composition ideally 1920x1080. A beautiful quiet sophisticated small modern city cafe on a rainy night, richly detailed Japanese anime semi-painted environment art, refined mature dark romantic atmosphere. Human eye-level perspective. Large windows on the left show rain streaks, far distant dim city buildings and a hazy bay, muted grey teal midnight exterior. On the right an elegant dark wooden coffee counter, small ordinary cups, modern coffee equipment, a few empty chairs and unoccupied little tables. Soft warm tungsten lamps with antique gold metal, soothing reflections on polished dark walnut, subtly textured walls and tasteful contemporary design. Main middle foreground is visually calm and clear, ample space for overlaying character sprites. Entire cafe is empty, no people, no silhouettes, no ghosts, no monster, no visible supernatural entities, no horror imagery, no writing, no signs, no logos. Beautiful painterly details, cinematic yet grounded quiet intimacy, deep teal-grey shadows balanced by warm old-gold light.
+

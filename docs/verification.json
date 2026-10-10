@@ -1,0 +1,15 @@
+{
+  "run_id": "20261010-091155-294638",
+  "runtime": "dist\\StrangeDates-1.0-win",
+  "distribution": true,
+  "results": [
+    {
+      "case": "portfolio_ui",
+      "exit_code": 0
+    },
+    {
+      "case": "complete_story",
+      "exit_code": 0
+    }
+  ]
+}

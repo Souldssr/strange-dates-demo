@@ -1,0 +1,19 @@
+# Ren'Py 自动编译、日志、存档与本机构建产物；源文件及原始美术保留在 Git。
+*.rpyc
+*.rpymc
+*.pyc
+__pycache__/
+game/cache/
+game/saves/
+build/
+dist/
+.qa/
+.tools/
+# 仅供本机编辑器使用的配置，不进入公开作品仓库。
+.vscode/
+log.txt
+traceback.txt
+errors.txt
+lint.txt
+screenshot*.png
+*.tmp
